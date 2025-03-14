@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\Anton\eclipse-workspace\demo01-ComplexityAnalysis\.metadata\.plugins\org.eclipse.jdt.core
+2125931182.index
+234307654.index
+3186209651.index
+4241824803.index
+2107510592.index
+1865797976.index

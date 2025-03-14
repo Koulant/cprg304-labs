@@ -1,0 +1,48 @@
+package exercise_3;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+//Program that sorts an array of integers using three different sorting algorithms: Bubble Sort, Insertion Sort, and Selection Sort. 
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		int[] unsortedArray = {57, 89, 22, 65, 13, 41, 76, 34, 98, 50};
+		
+		//Program prompt for the user to choose a sorting algorithm from a list of three options
+        System.out.println("Select a sorting algorithm:");
+        System.out.println("- Enter 1 for a bubble sort");
+        System.out.println("- Enter 2 for an insertion sort");
+        System.out.println("- Enter 3 for a selection sort");f
+
+		Scanner scanner = new Scanner(System.in);
+		
+		//The program outputs the contents of the array in the form of a string before and after sorting
+		System.out.println("\nContents of the integer array before sorting: " + Arrays.toString(unsortedArray));
+		
+		int selection = scanner.nextInt();
+		
+		//The selected algorithm then sorts the given array of integers using the appropriate sorting algorithm
+		switch (selection) {
+			case 1:
+				BubbleSort.bubbleSort(unsortedArray);
+				System.out.println("Contents of the integer array after sorting using bubble sort: " + Arrays.toString(unsortedArray));
+				break;
+			case 2: 
+				InsertionSort.insertionSort(unsortedArray);
+				System.out.println("Contents of the integer array after sorting using insertion sort: " + Arrays.toString(unsortedArray));
+				break;
+			case 3:
+				SelectionSort.selectionSort(unsortedArray);
+				System.out.println("Contents of the integer array after sorting using selection sort: " + Arrays.toString(unsortedArray));
+				break;
+			default:
+				System.out.println("Invalid input. Program exiting.");
+				return;
+		}
+		
+	}
+	
+}

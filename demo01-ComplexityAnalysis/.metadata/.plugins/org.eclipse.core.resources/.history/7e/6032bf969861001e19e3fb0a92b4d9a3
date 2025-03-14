@@ -1,0 +1,19 @@
+package exercise_2;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		//Exercise 2
+		
+		Integer[] sortedArray = {2, 13, 24, 35, 46, 57, 69, 78, 81, 95};
+		int target = 13;
+		
+		int result = binarySearch(sortedArray, target);
+				
+
+
+		}
+
+	}
+}

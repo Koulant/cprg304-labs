@@ -1,0 +1,42 @@
+package exercise_3;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		//Write a program in Java that sorts an array of integers using three different sorting algorithms (Bubble Sort, Insertion Sort, and Selection Sort). 
+		//Your program should first present a prompt for the user to choose a sorting algorithm from a list of three options. 
+		//The selected algorithm then sorts the given array of integers. 
+		//Before and after sorting, the program outputs the contents of the array in the form of a string.
+		
+		int[] unsortedArray = {57, 89, 22, 65, 13, 41, 76, 34, 98, 50};
+		
+		//Program prompt
+        System.out.println("Select a sorting algorithm:");
+        System.out.println("Select 1 for Bubble Sort");
+        System.out.println("Select 2 for Insertion Sort");
+        System.out.println("Select 3 for Selection Sort");
+
+		Scanner scanner = new Scanner(System.in);
+		
+		int selection = scanner.nextInt()
+				
+		switch (selection) {
+			case 1:
+				bubbleSort(unsortedArray);
+				break;
+			case 2: 
+				insertionSort(unsortedArray);
+				break;
+			case 3:
+				selectionSort(unsortedArray);
+				break;
+				
+		}
+		
+		
+	}
+
+}

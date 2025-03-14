@@ -1,0 +1,20 @@
+package exercise_3;
+
+public class BubbleSort {
+
+	public static void bubbleSort(int[] unsortedArray) {
+		//Each pair of numbers in ascending index order are compared
+		//and swapped if one is less than the other
+		for(int i = 0; i < unsortedArray.length - 1; i++) {
+			for(int j = 0; j < unsortedArray.length - i - 1; j++) {
+				if(unsortedArray[j] > unsortedArray[j+1]) {
+					int temp = unsortedArray[j];
+					unsortedArray[j] = unsortedArray[j+1];
+					unsortedArray[j+1] = temp;
+				}
+			}
+		}
+		
+	}
+
+}

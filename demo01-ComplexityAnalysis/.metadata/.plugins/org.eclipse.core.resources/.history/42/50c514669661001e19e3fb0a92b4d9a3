@@ -1,0 +1,22 @@
+package exercise_2;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Exercise 2
+		
+		int[] sortedArray = {2, 13, 24, 35, 46, 57, 69, 78, 81, 95};
+		int target = 13;
+		
+		int result = binarySearch(sortedArray, target);
+				
+		if (result != -1) { 
+			System.out.println("")
+
+		}
+
+	}
+
+}
